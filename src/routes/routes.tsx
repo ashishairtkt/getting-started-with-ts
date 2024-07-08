@@ -2,7 +2,7 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider, RouteObject } from 'react-router-dom';
 import Home from '../components/pages/Home';
 import NotFound from './NotFound';
-import Login from '../components/pages/Login';
+import Login from '../components/Auth/Login';
 import Dashboard from '../components/pages/Dashboard';
 import ProtectedRoute from './ProtectedRoute';
 
