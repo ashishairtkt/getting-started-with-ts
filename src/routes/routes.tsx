@@ -5,6 +5,7 @@ import NotFound from './NotFound';
 import Login from '../components/Auth/Login';
 import Dashboard from '../components/pages/Dashboard';
 import ProtectedRoute from './ProtectedRoute';
+import SignUp from '../components/Auth/SignUp';
 
 
 const routes: RouteObject[] = [
@@ -16,6 +17,10 @@ const routes: RouteObject[] = [
     {
         path: '/login',
         element: <Login />,
+    },
+    {
+        path: '/SignUp',
+        element: <SignUp />,
     },
     {
         path: '/dashboard',
