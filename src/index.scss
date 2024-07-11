@@ -10,3 +10,106 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+.alert-section {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  gap: 80px;
+  color: white;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.alert-section button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top-right {
+  top: 1rem;
+  right: 1rem;
+}
+
+.top-left {
+  top: 1rem;
+  left: 1rem;
+}
+
+.bottom-right {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.bottom-left {
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.bg-success {
+  background-color: green;
+}
+
+.bg-info {
+  background-color: skyblue;
+}
+
+.bg-warning {
+  background-color: orange;
+}
+
+.bg-error {
+  background-color: red;
+}
+
+.autoComp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-handler {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  input {
+    width: 300px;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(4, 68, 246);
+    font-size: large;
+    &:focus {
+      outline: none;
+    }
+  }
+  .res-con {
+    border-radius: 0.25rem;
+    border: 1px solid rgb(4, 68, 246);
+    .res {
+      padding: 0.5rem 1rem;
+      color: gray;
+      font-weight: 600;
+    }
+  }
+}
+
+.highlight {
+  background-color: rgb(255, 230, 0); /* or any other style you prefer */
+}

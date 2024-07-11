@@ -7,6 +7,10 @@ import Dashboard from '../components/pages/Dashboard';
 import ProtectedRoute from './ProtectedRoute';
 import SignUp from '../components/Auth/SignUp';
 
+import TestingAlert from '../components/AlertBar/TestingAlert';
+import AutoComplete from '../components/AutoComplete/autoCompelete';
+
+
 
 const routes: RouteObject[] = [
     {
@@ -22,6 +26,15 @@ const routes: RouteObject[] = [
         path: '/SignUp',
         element: <SignUp />,
     },
+    {
+        path: '/TestingAlert',
+        element: <TestingAlert />,
+    },
+    {
+        path: '/AutoComplete',
+        element: <AutoComplete />,
+    },
+
     {
         path: '/dashboard',
         element: (
